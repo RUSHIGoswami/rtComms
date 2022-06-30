@@ -13,5 +13,5 @@ require "classes/User.php";
 $account = new \MyApp\Account();
 $loadfromUser = new \MyApp\User();
 
-define("WWW_ROOT", "http://localhost/webrtc/");
+define("WWW_ROOT", "http://localhost/rtComms/");
 require "functions.php";
