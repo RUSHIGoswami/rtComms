@@ -1,4 +1,4 @@
-var base_url = 'http://localhost/webrtc/'
+var base_url = 'http://localhost/rtComms/'
 
 
 function loadConnectedPeers() {
@@ -9,7 +9,7 @@ function loadConnectedPeers() {
             $(".g-users").html(data);
         })
     }
-    
+
 }
 
 loadConnectedPeers()
