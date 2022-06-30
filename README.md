@@ -21,12 +21,12 @@
 # Snippets:
 
 <div style="display:grid;row-gap:100px;grid-template-columns:1fr 1fr;">
-<img src="https://github.com/RUSHIGoswami/rtComms/blob/master/snippets/1.png" width="500px" height="350px">
-<img src="https://github.com/RUSHIGoswami/rtComms/blob/master/snippets/2.png" width="500px" height="350px">
-<img src="https://github.com/RUSHIGoswami/rtComms/blob/master/snippets/3.png" width="500px" height="350px">
-<img src="https://github.com/RUSHIGoswami/rtComms/blob/master/snippets/5.png" width="500px" height="350px">
-<img src="https://github.com/RUSHIGoswami/rtComms/blob/master/snippets/6.png" width="500px" height="350px">
-<img src="https://github.com/RUSHIGoswami/rtComms/blob/master/snippets/7.png" width="500px" height="350px">
-<img src="https://github.com/RUSHIGoswami/rtComms/blob/master/snippets/8.png" width="500px" height="350px">
-<img src="https://github.com/RUSHIGoswami/rtComms/blob/master/snippets/9.png" width="500px" height="350px">
+<img src="https://github.com/RUSHIGoswami/rtComms/blob/master/snippets/1.png" width="400px" height="350px">
+<img src="https://github.com/RUSHIGoswami/rtComms/blob/master/snippets/2.png" width="400px" height="350px">
+<img src="https://github.com/RUSHIGoswami/rtComms/blob/master/snippets/3.png" width="400px" height="350px">
+<img src="https://github.com/RUSHIGoswami/rtComms/blob/master/snippets/5.png" width="400px" height="350px">
+<img src="https://github.com/RUSHIGoswami/rtComms/blob/master/snippets/6.png" width="400px" height="350px">
+<img src="https://github.com/RUSHIGoswami/rtComms/blob/master/snippets/7.png" width="400px" height="350px">
+<img src="https://github.com/RUSHIGoswami/rtComms/blob/master/snippets/8.png" width="400px" height="350px">
+<img src="https://github.com/RUSHIGoswami/rtComms/blob/master/snippets/9.png" width="400px" height="350px">
 </div>
