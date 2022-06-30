@@ -25,7 +25,7 @@ require "shared/header.php";
 <header class="g-header">
     <div class="site-logo">
         <a href="<?php echo url_for("index.php"); ?>" class="anchor">
-            <img src="<?= url_for("assets/images/11mantras.jpg"); ?>" width="40" height="40" alt="">
+            <img src="<?= url_for("assets/images/rtC.svg"); ?>" width="40" height="40" alt="">
         </a>
     </div>
     <div class="g-header-right">

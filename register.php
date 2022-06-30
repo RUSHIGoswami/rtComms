@@ -29,7 +29,7 @@ if (is_request_post()) {
 require "shared/header.php"; ?>
 <div class="container">
     <h1>Register Form</h1>
-    <h2>To continue to 11Mantras...</h2>
+    <h2>To continue to rtComms...</h2>
     <form action="<?php echo h($_SERVER['PHP_SELF']); ?>" method="POST">
         <div class="form-control">
             <input type="text" name="fname" value="<?php getInputValue('fname'); ?>" required>

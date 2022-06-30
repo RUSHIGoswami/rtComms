@@ -24,7 +24,7 @@ $pageTitle = 'Login';
 require "shared/header.php";
 ?>
 <div class="container">
-    <h1>Login to 11Mantras</h1>
+    <h1>Login to rtComms</h1>
     <form action="<?php echo h($_SERVER['PHP_SELF']); ?>" method="POST">
         <?php echo $account->getError(Constant::$loginerror); ?>
         <div class="form-control">
