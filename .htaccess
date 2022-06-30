@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{REQUEST_NANE} !-f
+RewriteCond %{REQUEST_NANE} !-d
+
+RewriteRule ^([a-zA-Z0-9]+)/videochat?$ videocall.php?uname=$1
+RewriteRule ^([a-zA-Z0-9]+)/chat?$ rtchat.php?uname=$1

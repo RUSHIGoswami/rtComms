@@ -1,0 +1,588 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+.Register, 
+.Login {
+    background-color: steelblue;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 500px;
+    padding: 10px 30px;
+    border-radius: 15px;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background-color: lightblue;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    border: 0;
+    border-radius: 5px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+.text {
+    margin-top: 20px;
+}
+
+.form-control {
+    position: relative;
+    margin: 20px 0 30px;
+    width: 400px;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: lightblue;
+}
+
+.form-control label {
+    position: absolute;
+    top: 15%;
+    left: 0;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 19px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+    color: lightblue;
+    transform: translateY(-30px);
+}
+
+.error{
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.g-header {
+    background: #009788;
+    padding: 0 179px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 2px 6px 1px;
+    align-items: center;
+    height: 70px;
+}
+
+.g-header-right{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.user-status{
+    font-size: 24px;
+    color: #fff;
+    padding: 7px;
+    background-color: #05c5ff;
+    border-radius: 4px;
+    margin-right: 13px;
+    cursor: pointer;
+}
+
+.user-wrapper{
+    display: flex;
+    align-items: center;
+    background-color: #26a599;
+    padding: 6px;
+    box-shadow: 4px 3px 11px -4px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.user-wrapper img{
+    border-radius: 50%;
+}
+
+.user-wrapper .username{
+    margin-left: 4px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.logout-status{
+    background-color: #a22a21;
+    color: #fff;
+    font-size: 24px;
+    padding: 7px;
+    margin-left: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.page-container{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    margin: 49px 35px 0px 35px;
+    gap: 60px;
+}
+
+.page-container aside {
+    height: 500px;
+    box-shadow: 1px 1px 4px -1px;
+    overflow-y: auto;
+}
+
+.page-container .main-content {
+    height: 500px;
+    box-shadow: 1px 1px 4px -1px;
+    background-color: rgb(77, 76, 81);
+    color: #fff;
+}
+
+.top-aside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.custom-style{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.custom-style.active{
+    border-bottom: 1px solid #333;
+    background-color: #ddd;
+}
+
+.nf-text{
+    color: #008066;
+}
+
+
+.custom-style svg{
+    width: 40px;
+    height: 40px;
+}
+
+
+.hidden{
+    display: none;
+}
+
+
+a
+{
+    color: #000;
+}
+
+
+.user-connected{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10px;
+    border: 1px solid #d2d2d2;
+    text-decoration: none;
+}
+.user-connected-rtchat{
+        background-color: #32324d;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        border: 1px solid #d2d2d2;
+        text-decoration: none;
+        padding: 2px 10px;
+}
+
+.user-connected:hover{
+    background-color: #ddd;
+}
+
+.u-connected-name{
+    font-size: 18px;
+    padding: 15px 0;
+}
+.u-connected-name-rtchat{
+    font-size: 18px;
+    padding: 15px;
+}
+
+.u-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.u-icons-rtchat {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+.webcam-container{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.webcam-img img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.sub-title-web{
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+.activeClass{
+    border-right: 2px solid red;
+}
+
+.user-connected-img img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.user-status-text{
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.user-calling-status {
+    padding: 15px 0;
+    font-size: 18px;
+}
+
+.user-calling-name {
+    padding: 15px 0;
+    font-size: 18px;
+}
+.video-call .cam-icon{
+    background-color: #00806e;
+    fill: #fff;
+    width: 40px;
+    height: 44px;
+    margin-left: 5px;
+    margin-right: 15px;
+    cursor:  pointer;
+    padding: 7px;
+    border-radius: 50%;
+}
+.audio-call .audio-icon-top{
+    cursor:  pointer;
+    background-color: #00806e;
+    fill: #fff;
+    font-size: 30px;
+    padding: 7px;
+    border-radius: 50%;
+}
+.cam-icon-connected{
+    fill: #05c5ff;
+    margin-right: 17px;
+}
+.audio-icon{
+    color: #05c5ff;
+    margin-right: 17px;
+}
+
+.main-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.remote-video-wrap{
+    position: relative;
+    z-index: 1;
+}
+
+video {
+    background: black;
+    border: 1px solid gray;
+}
+
+.call-wrap {
+    position: relative;
+    display: block;
+    height: 100%;
+}
+.call-wrap-rtchat {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.rtchat{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.chat{
+    background: rgb(213, 101, 204);
+    margin: 10px 0;
+}
+
+.local-chat{
+    margin-left: auto;
+    margin-right: 3px;
+    padding: 10px;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.remote-chat{
+    margin-left: 3px;
+    margin-right: auto;
+    padding: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.chat-actions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-bottom: 3px;
+}
+.rt-chat{
+    background: transparent;
+    border: none;
+    padding: 10px;
+    margin:0 2px 5px 2px;
+    color: #fff;
+    height: 2.5em;
+    width: 100%;
+}
+
+.sendBtn {
+    width: 2.5em;
+    height: 2.5em;
+    background: #000;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+}
+.sendChat{
+    background: none;
+    border: none;
+    padding: 12px;
+    color: #fff;
+}
+
+.rt-chat:focus, .sendChat:focus{
+    outline: none;
+}
+
+#local-video {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 0;
+}
+
+#remote-video {
+    height: 500px;
+    width: 1056px;
+}
+
+.chat-wrap {
+    display: block;
+    width: 400px;
+    margin-left: 15px;
+    padding: 10px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.call-hang-status {
+    position: absolute;
+    z-index: 999;
+    height: 97%;
+    width: 100%;
+}
+
+.calling-status-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 9;
+}
+
+.calling-action {
+    display: flex;
+}
+
+
+.user-image img {
+    height: 150px;
+    width: 150px;
+}
+
+.user-name {
+    padding: 5px 0;
+    font-size: 18px;
+}
+
+.call-accept .audio-icon {
+    font-size: 18px;
+    background-color: #388E3C;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 8px;
+    margin: 20px;
+}
+
+.call-reject .close-icon {
+    font-size: 18px;
+    background-color: #C62826;
+    color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 8px;
+    margin: 20px;
+}
+
+.hidden-status{
+    display: none;
+}
+.call-status-wrap {
+    height: 500px;
+    width: 500px;
+}
+
+.calling-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    z-index: 9;
+}
+
+.calling-hang-action {
+    padding: 420px 0 0 0;
+    display: flex;
+}
+
+.video-toggle {
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.audio-toggle {
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.call-cancel-icon {
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+        .call-hang-action {
+            padding: 425px 259px 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-left: 288px;
+        }
+    
+        .videcam-on i {
+            font-size: 28px;
+            background-color: #00796b;
+            border-radius: 50%;
+            padding: 8px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+    
+        .audio-on svg {
+            width: 40px !important;
+            height: 40px !important;
+            background-color: #00796b;
+            border-radius: 50%;
+            fill: #fff;
+            padding: 8px;
+            margin-right: 20px;
+            cursor: pointer;
+        }
